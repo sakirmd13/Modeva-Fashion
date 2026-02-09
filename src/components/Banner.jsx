@@ -31,7 +31,7 @@ import YellowGray from "../assets/image/yellogray.png";
 import ChristmasStyle from "../assets/image/crismus.png";
 
 // Video section images
-import YoutubeVideo from "../components/YoutubeVideo";
+import YoutubeVideo from "./YoutubeVideo";
 
 const Banner = () => {
   const navigate = useNavigate();
