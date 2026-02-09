@@ -10,6 +10,7 @@ const MainLayout = () => {
       <main>
         <Outlet />     {/* Route content renders here */}
       </main>
+
       <Footer />       {/* Footer always visible */}
     </>
   );
