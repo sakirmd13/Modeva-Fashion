@@ -137,7 +137,7 @@ const Products = () => {
               filteredProducts.map((product) => {
                 const isInCart = CartState.cartItems.some((item) => item.id === product.id);
                 return (
-                  <Col key={product.id} md={3} className="mb-3">
+                  <Col key={product.id} xs={12} md={4}lg={3} className="mb-3">
                     <Card className="product-card" style={{ position: "relative" }}>
                       <div className="star">
                         <FaStar />
