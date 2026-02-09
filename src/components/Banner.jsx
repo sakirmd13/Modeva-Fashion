@@ -31,7 +31,7 @@ import YellowGray from "../assets/image/yellogray.png";
 import ChristmasStyle from "../assets/image/crismus.png";
 
 // Video section images
-import YouTubeVideo from "./YoutubeVideo";
+import YoutubeVideo from "../components/YoutubeVideo";
 
 const Banner = () => {
   const navigate = useNavigate();
@@ -242,7 +242,7 @@ const Banner = () => {
         {/* ================= Video Section ================= */}
         <section>
           <Container>
-            <YouTubeVideo />
+            <YoutubeVideo />
           </Container>
         </section>
 

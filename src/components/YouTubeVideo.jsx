@@ -3,7 +3,7 @@ import { Container, Image } from "react-bootstrap";
 import FooterImage from "../assets/image/footerimage.png";
 import PlayIcon from "../assets/image/icon/play-circle.svg";
 
-const YouTubeVideo = () => {
+const YoutubeVideo = () => {
   const [isPlaying, setIsPlaying] = useState(false);
   const youtubeID = "WCPIQZcfxao"; // updated video ID
 
@@ -42,4 +42,4 @@ const YouTubeVideo = () => {
   );
 };
 
-export default YouTubeVideo;
+export default YoutubeVideo;
