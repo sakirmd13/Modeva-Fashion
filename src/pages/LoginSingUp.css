@@ -1,0 +1,28 @@
+/* Image styling */
+.signin-image {
+  width: 100%;
+  max-height: 500px; 
+  object-fit: cover; 
+  
+}
+
+/* Optional: Center form vertically and add spacing */
+.signin-row {
+  min-height: 100vh;
+  align-items: center;
+}
+/* Image styling */
+.signup-image {
+  width: 100%;
+  max-height: 500px; 
+  object-fit: cover;
+}
+.AllCapital{
+    text-transform:uppercase;
+}
+
+/* Row center alignment */
+.signup-row {
+  min-height: 100vh;
+  align-items: center;
+}

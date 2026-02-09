@@ -1,0 +1,96 @@
+/* ===== Carousel Wrapper ===== */
+.carousel-wrapper {
+background-color: #f2f2f2;
+  padding: 96px 0;
+  overflow: hidden;
+}
+
+/* ===== Cards Row ===== */
+.cards-container {
+  display: flex;
+  gap: 10px; /* space between cards */
+}
+
+/* ===== CARD (FIXED SPEC) ===== */
+.review-card-fixed {
+  width: 500px;
+  height: 160px;
+
+  padding: 10px;
+  display: flex;
+  flex-direction: column; /* vertical flow */
+  gap: 10px;
+
+  border-radius: 6px;
+  background: #ffffff;
+  box-shadow: 0 15px 24px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+
+/* ===== Header Row ===== */
+.card-header-custom {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Left Circle */
+.left-panel .circle {
+  width: 40px;
+  height: 40px;
+  background: #4d0e0e;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* Name + Date */
+.right-panel h4 {
+  margin: 5px;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.right-panel p {
+  margin: 0;
+  font-size: 10px;
+  color: #777;
+}
+
+/* Stars */
+.stars {
+  margin-left: auto;
+  font-size: 16px;
+  color: #f5c518;
+  white-space: nowrap;
+}
+
+/* Content Text */
+.content {
+  margin: 0;
+  font-size: 10px;
+  line-height: 1.5;
+  color: #444;
+
+  /* Clamp to avoid overflow in fixed height */
+  overflow: hidden;
+  display: -webkit-box;
+}
+/* ===== AUTO SCROLL ANIMATION ===== */
+.cards-container {
+  animation: scrollCards 20s linear infinite;
+  width: max-content;
+}
+
+/* Pause animation on hover (optional but professional) */
+.cards-container:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scrollCards {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

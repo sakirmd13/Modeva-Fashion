@@ -1,0 +1,37 @@
+.footer {
+  background:#8B4513;
+  color: #fff;
+  padding: 40px 0;
+  margin-top: 50px;
+}
+
+.footer h4,
+.footer h5 {
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.footer p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer ul li {
+  font-size: 14px;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.footer ul li:hover {
+  color: #f39c12;
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: bold;
+}

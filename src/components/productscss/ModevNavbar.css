@@ -1,0 +1,21 @@
+/* ModevNavbar.css */
+
+.catalog-dropdown .dropdown-menu {
+  width: 700px;
+  padding: 15px;
+}
+
+.catalog-dropdown h6 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.catalog-dropdown .dropdown-item {
+  padding: 3px 0;
+}
+
+@media (max-width: 992px) {
+  .catalog-dropdown .dropdown-menu {
+    width: 100%;
+  }
+}

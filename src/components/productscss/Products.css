@@ -1,0 +1,33 @@
+.product-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.product-actions {
+  position: absolute;
+  bottom: -60px;
+  left: 0;
+  right: 0;
+  background: white;
+  transition: 0.3s ease;
+  opacity: 0;
+}
+
+.product-card:hover .product-actions {
+  bottom: 0;
+  opacity: 1;
+}
+.star {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  background-color:#8B4513;
+  color: #ffd700;
+  padding: 2px 6px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  z-index: 2;
+}
