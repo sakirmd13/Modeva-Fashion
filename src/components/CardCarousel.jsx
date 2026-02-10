@@ -34,34 +34,31 @@ function CardCarousel() {
   return (
     <Container className="carousel-wrapper">
       <Carousel controls={false} indicators={false} interval={3000}>
-        {/* SINGLE SLIDE */}
         <Carousel.Item>
           <div className="cards-container">
             {cardData.map((item, index) => (
-              <Card className="review-card-fixed">
+              <Card className="review-card-fixed" key={index}>
                 <div className="card-header-custom">
                   <div className="left-panel">
                     <div className="circle"></div>
                   </div>
 
                   <div className="right-panel">
-                    <h4>Cynthia Caroline</h4>
-                    <p>15 July 2023</p>
+                    <h4>{item.name}</h4>
+                    <p>{item.date}</p>
                   </div>
 
                   <div className="stars">★★★★★</div>
                 </div>
 
-                <p className="content">
-                  Lorem ipsum dolor sit amet consectetur. Suspendisse laoreet scelerisque morbi vulputate.
-                </p>
+                <p className="content">{item.text}</p>
               </Card>
-
             ))}
           </div>
         </Carousel.Item>
       </Carousel>
     </Container>
+
   );
 }
 

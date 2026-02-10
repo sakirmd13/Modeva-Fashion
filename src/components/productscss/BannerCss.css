@@ -10,72 +10,106 @@ p {
 }
 
 /* ================= Banner Section ================= */
+/* Cards wrapper spacing */
+/* ===== Banner Section ===== */
 .banner-section {
   background-image: url("../../assets/image/bannerimage.png");
   background-size: cover;
   background-position: center;
   padding: 100px 0;
   color: white;
+  min-height: 600px; /* BG IMAGE FIX */
 }
 
+/* Left text */
 .banner-left {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
+/* Cards wrapper */
 .banner-products {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 23px; /* cards gap */
   align-items: flex-end;
 }
 
+/* Card */
 .banner-card {
-  display: flex;
-  flex-direction: row;
   max-width: 442px;
-  width: auto;
-  background-color: #ffffff;
-  color: black;
-  overflow: hidden;
+  background: #fff;
+  color: #000;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.card1 {
+/* Card inner flex */
+.banner-card-content {
+  display: flex;
+  align-items: center;
+}
+
+/* Directions */
+.card1 .banner-card-content {
   flex-direction: row;
 }
 
-.card2 {
+.card2 .banner-card-content {
   flex-direction: row-reverse;
 }
 
-.card-left img {
-  width: 100%;
-  height: 100%;
+/* Image */
+.banner-image img {
+  width: 200px;
+  height: 200px;
   object-fit: cover;
 }
 
-.card-right {
-  padding: 16px;
+/* Info */
+.banner-info {
+  padding-right: 44px;
+  padding-bottom: 44px;
+  padding-top: 24px;
+  padding-left: 24px;
+
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 
-.card-left a,
-.card-right a {
+.banner-info h5 {
+  margin: 0;
+}
+
+.banner-info p {
+  margin: 16px 0;
+}
+
+.shop-now-btn {
   color: black;
-  margin-top: 8px;
+  font-weight: 500;
+}
+.shop-now-btn:hover {
   text-decoration: none;
+  color: green;
+  font-weight: 500;
 }
 
+/* Mobile */
 @media (max-width: 768px) {
-  .banner-card,
-  .card1,
-  .card2 {
-    flex-direction: column !important;
-    height: auto;
+  .banner-left {
+    margin-bottom: 10px;
+  }
+  .banner-card-content {
+    flex-direction: row;
+  }
+
+  .banner-image img {
+    width: 100%;
+  }
+
+  .banner-info {
+    padding: 24px;
   }
 }
 
@@ -132,29 +166,39 @@ p {
 }
 
 .dress-card {
-  position: relative;   /* parent reference */
+  position: relative; /* parent reference */
   overflow: hidden;
+}
+
+.image-box {
+  position: relative;
+  width: 100%;
+}
+.image-box img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
 }
 
 .rating-badge {
   position: absolute;
   top: 10px;
-  left: 10px;
-  background: #fff;
-  padding: 4px 8px;
+  right: 10px;
+  background: #8b4513;
+  color: #fff;
+  padding: 6px 12px;
   border-radius: 20px;
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 6px;
   font-size: 14px;
   font-weight: 600;
-  z-index: 10;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  z-index: 999;
 }
 
-.star-icon {
-  color: #ffd700;
-  font-size: 12px;
+.rating-badge svg {
+  color: gold;
 }
 
 /* ================= Buttons ================= */
@@ -169,11 +213,20 @@ p {
   cursor: pointer;
   transition: all 0.3s ease;
 }
-
+.margin {
+  margin-top: 20px;
+}
+.dress-card {
+  margin: 0;
+}
+@media (max-width: 767px) {
+  .dress-card {
+    margin: 10px;
+  }
+}
 .see-more-btn:hover {
   background-color: #7a3d10;
 }
-
 
 /* ================= Happy Customer ================= */
 .hc-card {
