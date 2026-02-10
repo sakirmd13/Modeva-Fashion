@@ -16,6 +16,8 @@ import GrayBlack from "../assets/image/gryblack.png";
 import YellowGray from "../assets/image/yellogray.png";
 import ChristmasStyle from "../assets/image/crismus.png";
 import YoutubeVideo from "./YoutubeVideo";
+import HappyCustomer from "./HappyCustomer";
+
 
 const Banner = () => {
   const navigate = useNavigate();
@@ -44,13 +46,13 @@ const Banner = () => {
           <Row className="align-items-center">
 
             {/* LEFT CONTENT */}
-            <Col md={6} xs={12}   className="banner-left">
-              <h1>New Collection</h1>
-              <p>Best fashion for you</p>
+            <Col md={6} xs={12} className="banner-left">
+              <p>made in Indonesia, dedicated to Indonesia</p>
+              <h1>Discover the Art of Dressing Up</h1>
             </Col>
 
             {/* RIGHT CARDS */}
-            <Col md={6} xs={12}  className="banner-products">
+            <Col md={6} xs={12} className="banner-products">
               {[1, 2].map((_, i) => (
                 <div key={i} className={`banner-card card${i + 1}`}>
                   <div className="banner-card-content xs={12}">
@@ -81,20 +83,40 @@ const Banner = () => {
 
       {/* Best Dress */}
       <section className="best-dress py-5">
+        <Row className="mb-4">
+          <Col xs={12}>
+            <h2 className="section-title">
+              The Best Dress for the Best Woman
+            </h2>
+          </Col>
+        </Row>
+
         <Row>
           {[Frok, ShortFrok, AnarkaliDress, FrokTwo].map((img, i) => (
-            <Col md={3} sm={6} xs={12} key={i}>
+            <Col md={3} sm={6} xs={12} key={i} className="mb-4">
               {renderCard(img)}
             </Col>
           ))}
         </Row>
-        <Button className="margin" onClick={handleSeeMore}>SEE MORE →</Button>
+
+        <Button className="margin see-more-btn" onClick={handleSeeMore}>
+          SEE MORE →
+        </Button>
       </section>
+
 
       {/* Best Outfit */}
       <section className="best-outfit py-5">
         <Row>
+          <Row className="mb-4">
+            <Col xs={12}>
+              <h2 className="section-title">
+                Best outfit for your happiness
+              </h2>
+            </Col>
+          </Row>
           {[BlackDress, GrayBlack, YellowGray, ChristmasStyle].map((img, i) => (
+
             <Col
               md={3}
               sm={6}
@@ -104,15 +126,18 @@ const Banner = () => {
             >
               {renderCard(img)}
             </Col>
+
           ))}
         </Row>
-        <Button className="margin" onClick={handleSeeMore}>
+        <Button className="margin see-more-btn" onClick={handleSeeMore}>
           SEE MORE →
         </Button>
       </section>
 
 
-      {/* Other components */}
+
+
+      <HappyCustomer />
       <YoutubeVideo />
       <CardSlider />
     </Container>

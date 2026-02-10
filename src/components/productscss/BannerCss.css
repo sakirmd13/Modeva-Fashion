@@ -161,6 +161,14 @@ p {
 }
 
 /* ================= Best Dress Section ================= */
+.section-title {
+  font-weight: 400;
+  font-size: 76px;
+  line-height: 130%;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
 .dress-card {
   position: relative;
 }
