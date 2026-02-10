@@ -156,24 +156,17 @@ const Banner = () => {
               </Col>
             </Row>
 
-            <Row>
-              {[BlackDress, GrayBlack, YellowGray, ChristmasStyle].map(
-                (img, index) => (
-                  <Col md={3} sm={6} xs={12} className="mb-4" key={index}>
-                    <div className="dress-card">
-                      <div className="rating-badge">
-                        <FaStar />
-                        <span>4.5</span>
-                      </div>
-                      <img src={img} alt="Outfit" className="img-fluid" />
-                      <p className="category">PRODUCT CATEGORY</p>
-                      <h5>Product Name</h5>
-                      <p className="price">IDR XXX</p>
-                    </div>
-                  </Col>
-                )
-              )}
-            </Row>
+            <div className="dress-card">
+              <div className="rating-badge">
+                <FaStar />
+                <span>4.5</span>
+              </div>
+              <img src={img} alt="Outfit" className="img-fluid" />
+              <p className="category">PRODUCT CATEGORY</p>
+              <h5>Product Name</h5>
+              <p className="price">IDR XXX</p>
+            </div>
+
 
             <Row>
               <Col xs={12}>
